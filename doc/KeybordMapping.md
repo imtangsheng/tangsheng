@@ -8,7 +8,7 @@
 注意，不要点进它的两个子文件夹里。右键点Keyboard Layout这个文件夹，选择新建二进制值。并且给建好的文件取名为Scancode Map
 ## 3.添加映射
 打开Scancode Map文件，如下图：
-![键盘映射图片Alt](../Img/KeyboardMapping01map.png "键盘映射操作文件设置")
+![键盘映射图片Alt](./img/KeyboardMapping01map.png "键盘映射操作文件设置")
 
 先解释一下每一排的含义
 
