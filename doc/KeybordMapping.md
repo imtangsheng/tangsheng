@@ -7,9 +7,9 @@
 
 注意，不要点进它的两个子文件夹里。右键点Keyboard Layout这个文件夹，选择新建二进制值。并且给建好的文件取名为Scancode Map
 ## 3.添加映射
-打开Scancode Map文件，如下图：
-![Scancode Map文件示意](https://github.com/imtangsheng/tangsheng/raw/main/img/KeyboardMapping.png "Scancode Map")
+打开Scancode Map文件，如图：
 
+![Scancode Map文件示意](https://github.com/imtangsheng/tangsheng/raw/main/img/KeyboardMapping.png "Scancode Map")
 
 先解释一下每一排的含义
 
