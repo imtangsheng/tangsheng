@@ -4,13 +4,14 @@
   - [KeybordMapping键盘映射方法](./doc/KeybordMapping.md "Keybord")
   - [Windows10常用命令](./doc/Windows10command.md "")
 - ProgrammingTools编程效率工具
-  - [markdown笔记](./doc/markdown.md "")
+  - [markdown文件笔记](./doc/markdown.md "") | [菜鸟教程链接](https://www.runoob.com/markdown/md-image.html "")
   - [git笔记](./doc/git.md "")
-
-- Issues
+  - [跟我一起写Makefile] (https://seisman.github.io/how-to-write-makefile/index.html "")
+  - [Shell 教程|菜鸟教程](https://www.runoob.com/linux/linux-shell.html)
+- Issues(#Issues)
   - [Images not displaying in GitHub Pages](#github上添加图片方式)
 
-
+## Issues
 ### Github上添加图片方式
   1)本地不显示，远程显示:  在Github上选择已经上传的图片，复制此时的浏览器地址栏地址url
 
