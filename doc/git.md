@@ -1,48 +1,132 @@
 # Git 使用方法
+## 参考
+- [Git 教程|菜鸟教程](https://www.runoob.com/git/git-tutorial.html "")
 ## 目录
-- [Git与SVN的区别](#git与svn的区别)
-- [git在两台机器间同步代码](#git在两台机器间同步代码)
-
-### Git与SVN的区别:
-    1)Git是分布式的,SVN不是:这是Git和其他非分布式的版本控制系统,例如SVN,CSV等,最核心的区别.
-    2)Git把内容按元数据方式存储,而SVN是按文件:所有的资源控制系统都是把文件的元信息隐藏载一个类似.svn,.cvs等的文件夹里.
-    3)Git分支和SVN的分支不同:分支在SVN中一点都不特别,其实它就是版本库中的另外一个目录.
-    4)Git没有一个全局的版本号,而SVN有:目前为止这是跟SVN相比Git缺少的最大的一个特征.
-    5)Git的内容完整性要优于SVN:Git的内容存储使用的是SHA-1哈希算法.这能确保代码内容的完整性,确保在遇到磁盘故障和网络问题时降低对版本库的破坏.
+- [使用git在两台机器间同步代码](#git在两台机器间同步代码)   
+    - [在github上提交](#21在github提交)
+    - [局域网内](#22在局域网内提交)
 
 
-### git在两台机器间同步代码
+## git在两台机器间同步代码
 步骤
-#### 1.在存放原始代码的机器上，比如A，假设代码目录为：/codes/project,
+### 1.设置提交代码用的用户名和邮箱
+
+全局:
 ```
-cd /codes/project
-
-# 创建git代码仓库
-git init
-git add .
-git commit -m "create project"
-
-# 切换到project父目录，创建一个project-bare目录
-cd ..
-mkdir project-bare
-cd project-bare
-
-# 从原始代码仓库创建bare仓库，作为“中央”仓库，其他机器(包括本机的原始仓库)往这里push，从这里pull
-git clone --bare ../project ./project-bare.git
-
-# 回到project仓库目录
-cd ../project
-
-# 把project-bare添加为remote，
-git remote add origin ../project-bare.git
-git branch --set-upstream-to=origin/master master
+git config --global user.name "xxx"
+git config --global user.email "xxx"
 ```
-#### 2.在其它机器上，比如B:
-假设通过ssh来连接机器A
+特定的项目：
 ```
-git clone ssh://<username>@<ip>:<port>:/codes/project-bare/project-bare.git ./project
+git config user.name "xxx"
+git config user.email "xxx"
 ```
 
-clone下来之后，在机器B上做修改，然后commit，push之后，在机器A上就可以pull到了。反之在机器A的project目录做修改，commit，push之后，在机器B上也能pull下来了。
+### 2.1在GitHub提交
 
-若要再添加一台开发机，重复第2步，clone操作即可。
+先克隆项目 git clone ***
+
+    git clone https://github.com/***.git
+
+我们先在本地建立 a 分支，在项目文件夹下执行：
+
+    // 建立并切换到a分支
+    git checkout -b a
+这条命令相当于执行下面这两条命令：
+
+    git branch a
+    git checkout a
+然后，我们在a分支上进行a模块代码的编写。比如我们在README.md文件里添加一句话：a分支第一次编写
+
+编写完以后，我们提交代码到远程的 a 分支。我们按顺序执行下面代码：
+
+    // 将项目的代码变化提交到缓存区（包括修改、添加和删除）
+    git add -A
+
+    // 将缓存区的所有内容提交到当前本地分支，并附上提交说明：'xxx'
+    git commit -m 'xxx'
+
+    // 确认分支是从最新的 master 分支,在GitHub上发起 Pull requests 请求
+    git pull
+
+    // 将代码提交到远程a分支
+    git push origin a
+
+后面就是等待项目管理员同意你的合并请求。
+
+如果从你克隆项目到本地到你准备合并 a 分支的这个过程中有人提交过代码到 master 分支。那么，我们需要先将本地项目切回 master 分支：
+
+    git checkout master
+将最新的远程 master 分支代码拉到本地的 master 分支：
+
+    git pull origin master
+切换到本地 a 分支：
+
+    git checkout a
+将本地 master 分支合并到当前分支：
+
+    git merge master
+如果合并的过程中有冲突，那么我们可以借助 vscode 去查看冲突的代码并选择我们需要保留的代码。
+
+合并好了以后，我们需要将本地的 a 分支代码更新到远程 a 分支：
+
+    git add -A
+
+    git commit -m "xxx"
+
+    git push origin a
+这样远程的 a 分支代码就不会比远程的 master 代码落后了，这样我们就可以提合并请求了。
+
+### 2.2在局域网内提交
+建一个空文件夹来做仓库，例如建为 cangku
+    
+    //cd 到 cangku目录下 创建远程仓库容器
+    cd cangku
+    mkdir mycangku.git
+    //创建初始化git仓库
+    cd mycangku.git
+    git init —bare
+    //pwd查看仓库路径，假设为 /abcd.git
+    pwd
+
+重复步骤2.1提交过程[在github上提交](#21在github提交)
+
+    ps:remote地址(Linux)
+    ssh://仓库本机名字(打开git 顶部@符号前面就是本机名字)@本机ip地址/abcd.git
+    //192.168.***.***/***.git
+操作过程
+
+    git clone ***
+    git add .
+    git commit -m "first"
+    git push origin master
+
+    //如果别人修改过仓库里面的项目，那么先拉下来和自己的合并再上传
+    //a.拉下来 
+    git fetch
+    //b.合并 
+    git merge origin/master
+    //这两小步，可以用
+    git pull
+    //c.合并后上传到仓库 
+    git push origin master 
+
+其他：ip地址改变之后，需要删除remote 重新和仓库建立连接
+    
+    //查看是否存在remote
+    git remote
+    //删除本地添加指定的远程地址
+    git remote remove origin
+    git remote add origin  ***
+    //修改远程地址
+    git remote set-url origin ***
+    //查看远程服务器地址和仓库名称
+    git remote -v  
+    1. 远程仓别名的重命名
+    git remote  -v // 查看远程仓
+    git remote rename trunk(现有远程仓别名)  private(自定义的远程仓别名) 
+    //修改远程仓别名
+    git remote  // 将会显示 master(默认远程主仓别名) 和 private (自定义的个人仓别名)
+    //删除远程仓
+    git remote private // 删除远程仓
+    git remote // 只会显示master(默认远程主仓别名)
