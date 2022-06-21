@@ -1,0 +1,45 @@
+安装 WSL
+
+https://docs.microsoft.com/zh-cn/windows/wsl/install
+
+
+# [在Windows server里安装WSL - Debian]
+
+[参考 1](https://liujia.anqun.org/index.php/archives/1537/)
+
+参考2：
+
+Windows Server 2019
+https://docs.microsoft.com/zh-cn/windows/wsl/install-on-server
+
+
+安装指南 https://docs.microsoft.com/zh-cn/windows/wsl/install-on-server
+
+## 1.启用虚拟机和wsl功能
+
+    dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+    dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+
+ps：进入BIOS 开机按delete键进入，高级里设置cpu虚拟化功能开启，cpu更改bios开启，不然重启又要重新设置。F10保存退出。
+## 2.下载 Linux 内核更新包
+
+下载 Linux 内核更新包
+https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+
+```
+Invoke-WebRequest -Uri https://aka.ms/wsl-debian-gnulinux -OutFile Debian.appx -UseBasicParsing
+
+Rename-Item Debian.appx Debian.zip
+
+Expand-Archive Debian.zip Debian
+
+
+Add-AppxPackage .\Debian.appx ()
+
+```
+
+## 3.将 WSL 2 设置为默认版本
+
+    wsl --set-default-version 2
+
+    wsl -l 
