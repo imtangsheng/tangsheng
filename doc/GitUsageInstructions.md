@@ -2,12 +2,20 @@
 ## 参考
 - [Git 教程|菜鸟教程](https://www.runoob.com/git/git-tutorial.html "")
 ## 目录
+- 
 - [GitHub代理设置](#github代理设置)
     - [git设置](#11全局设置不推荐)
     - [config文件配置](#2配置一个config就可以了)
 - [使用git在两台机器间同步代码](#git在两台机器间同步代码)   
     - [在github上提交](#21在github提交)
     - [局域网内](#22在局域网内提交)
+
+## git设置
+### git pull/push时免密码
+
+    git config --global credential.helper store
+
+之后会在.gitconfig文件中多加红色字体项"[credential] helper = store",再次提交输入密码后会在根目录生成一个.git-credentials文件
 
 ## github代理设置
 

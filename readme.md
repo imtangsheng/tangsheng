@@ -7,8 +7,8 @@
 - Linux Debain
   - [Linux 系统目录命名风格](./doc/LinuxSystemDirectoryNamingStyle.md)
 - ProgrammingTools编程效率工具
-  - [markdown文件笔记](./doc/Markdown.md "") | [菜鸟教程链接](https://www.runoob.com/markdown/md-image.html "")
-  - [git笔记](./doc/Git.md "")
+  - [markdown使用说明](./doc/MarkdownUsageInstructions.md "") | [菜鸟教程链接](https://www.runoob.com/markdown/md-image.html "")
+  - [git使用说明](./doc/GitUsageInstructions.md.md "")
   - [跟我一起写Makefile] (https://seisman.github.io/how-to-write-makefile/index.html "")
   - [Shell 教程|菜鸟教程](https://www.runoob.com/linux/linux-shell.html)
 - Issues(#Issues)
