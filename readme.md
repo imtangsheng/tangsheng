@@ -3,7 +3,7 @@
 - Windows10
   - [KeybordMapping键盘映射方法](./doc/KeybordMapping.md "Keybord")
   - [Windows10常用命令](./doc/Windows10command.md "")
-  - [Windows10安装Linux发行版Debian子系统wsl](./doc/wsl_debian.md)
+  - [Windows10安装Linux发行版Debian子系统wsl](./doc/WSL_Debian.md)
 - ProgrammingTools编程效率工具
   - [markdown文件笔记](./doc/markdown.md "") | [菜鸟教程链接](https://www.runoob.com/markdown/md-image.html "")
   - [git笔记](./doc/git.md "")
