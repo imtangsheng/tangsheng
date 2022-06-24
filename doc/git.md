@@ -2,10 +2,82 @@
 ## 参考
 - [Git 教程|菜鸟教程](https://www.runoob.com/git/git-tutorial.html "")
 ## 目录
+- [GitHub代理设置](#github代理设置)
+    - [git设置](#11全局设置不推荐)
+    - [config文件配置](#2配置一个config就可以了)
 - [使用git在两台机器间同步代码](#git在两台机器间同步代码)   
     - [在github上提交](#21在github提交)
     - [局域网内](#22在局域网内提交)
 
+## github代理设置
+
+### 1.1全局设置（不推荐）
+
+    #使用http代理 
+    git config --global http.proxy http://127.0.0.1:1080
+    git config --global https.proxy https://127.0.0.1:1080
+    #使用socks5代理
+    git config --global http.proxy socks5://127.0.0.1:51837
+    git config --global https.proxy socks5://127.0.0.1:51837
+
+### 1.2只对Github代理（推荐）
+
+    #使用socks5代理（推荐）
+    git config --global http.https://github.com.proxy socks5://127.0.0.1:1080
+    #使用http代理（不推荐）
+    git config --global http.https://github.com.proxy http://127.0.0.1:1080
+
+### 1.3取消代理
+
+当你不需要使用代理时，可以取消之前设置的代理。
+
+    git config --global --unset http.proxy git config --global --unset https.proxy
+
+### 2.配置一个config就可以了。
+
+Linux、MacOS
+
+    nano ~/.ssh/config
+
+Windows 
+
+到C:\Users\your_user_name\.ssh目录下，新建一个config文件（无后缀名）
+
+将下面内容加到config文件中即可
+
+对于windows用户，代理会用到connect.exe，你如果安装了Git都会自带connect.exe，如我的路径为C:\APP\Git\mingw64\bin\connect
+
+#Windows用户，注意替换你的端口号和connect.exe的路径
+
+    ProxyCommand "C:\APP\Git\mingw64\bin\connect" -S 127.0.0.1:1080 -a none %h %p
+
+#MacOS用户用下方这条命令，注意替换你的端口号
+
+    #ProxyCommand nc -v -x 127.0.0.1:1080 %h %p
+
+```
+Host github.com
+  User git
+  Port 22
+  Hostname github.com
+  # 注意修改路径为你的路径
+  IdentityFile "C:\Users\Your_User_Name\.ssh\id_rsa"
+  TCPKeepAlive yes
+
+Host ssh.github.com
+  User git
+  Port 443
+  Hostname ssh.github.com
+  # 注意修改路径为你的路径
+  IdentityFile "C:\Users\Your_User_Name\.ssh\id_rsa"
+  TCPKeepAlive yes
+```
+
+保存后文件后测试方法如下，返回successful之类的就成功了。
+
+### 2.1测试是否设置成功
+
+    ssh -T git@github.com
 
 ## git在两台机器间同步代码
 步骤
