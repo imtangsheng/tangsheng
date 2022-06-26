@@ -9,7 +9,7 @@
 - ProgrammingTools编程效率工具
   - [markdown使用说明](./doc/MarkdownUsageInstructions.md "") | [菜鸟教程链接](https://www.runoob.com/markdown/md-image.html "")
   - [git使用说明](./doc/GitUsageInstructions.md.md "")
-  - [跟我一起写Makefile] (https://seisman.github.io/how-to-write-makefile/index.html "")
+  - [Make 命令教程](./doc/MakeCommandTutorial.md)
   - [Shell 教程|菜鸟教程](https://www.runoob.com/linux/linux-shell.html)
 - Issues(#Issues)
   - [Images not displaying in GitHub Pages](#github上添加图片方式)

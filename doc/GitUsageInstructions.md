@@ -31,9 +31,11 @@ git add	|添加文件到暂存区
 git status	|查看仓库当前的状态，显示有变更的文件。
 git diff	|比较文件的不同，即暂存区和工作区的差异。
 git commit	|提交暂存区到本地仓库。
-git reset	|回退版本。
+git reset	|回退版本。```git reset HEAD #回退到当前版本git reset HEAD^ # 回退到上一个版本```
+git checkout file-name  |恢复修改，没有任何 git 操作
 git rm	|将文件从暂存区和工作区中删除。
 git mv [file] [newfile]	|移动或重命名工作区文件。
+
 
 ### 3.提交日志
 命令|	说明
