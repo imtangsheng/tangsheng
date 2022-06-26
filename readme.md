@@ -11,7 +11,7 @@
   - [markdown使用说明](./doc/MarkdownUsageInstructions.md "") | [菜鸟教程链接](https://www.runoob.com/markdown/md-image.html "")
   - [git使用说明](./doc/GitUsageInstructions.md.md "")
   - [Make 命令教程](./doc/MakeCommandTutorial.md)
-  - [Shell 教程|菜鸟教程](https://www.runoob.com/linux/linux-shell.html)
+  - [Shell(Bash)脚本教程](./doc/BashLinuxShell.md) | [菜鸟 Shell 脚本教程链接](https://www.runoob.com/linux/linux-shell.html)
 - Issues(#Issues)
   - [Images not displaying in GitHub Pages](#github上添加图片方式)
 
