@@ -6,6 +6,7 @@
   - [Windows10安装Linux发行版Debian子系统wsl](./doc/WSL_Debian.md)
 - Linux Debain
   - [Linux 系统目录命名风格](./doc/LinuxSystemDirectoryNamingStyle.md)
+  - [Linux Debian 常用命令](./doc/LinuxDebainCommand.md)
 - ProgrammingTools编程效率工具
   - [markdown使用说明](./doc/MarkdownUsageInstructions.md "") | [菜鸟教程链接](https://www.runoob.com/markdown/md-image.html "")
   - [git使用说明](./doc/GitUsageInstructions.md.md "")
