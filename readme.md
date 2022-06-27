@@ -12,6 +12,7 @@
   - [git使用说明](./doc/GitUsageInstructions.md.md "")
   - [Make 命令教程](./doc/MakeCommandTutorial.md)
   - [Shell(Bash)脚本教程](./doc/BashLinuxShell.md) | [菜鸟 Shell 脚本教程链接](https://www.runoob.com/linux/linux-shell.html)
+  - [VSCode编程配置](./doc/VSCodeConfig.md)
 - Issues(#Issues)
   - [Images not displaying in GitHub Pages](#github上添加图片方式)
 
