@@ -6,6 +6,7 @@ https://docs.microsoft.com/zh-cn/windows/wsl/install
 
 - [Windows server 2022](#在windows-server-2022-里安装wsl---debian)
 - [Windows 11 企业版](#windows-11-企业版)
+- [Windows 10 WSL Debian 9 Stretch 升级到 Debian 10 Buster](#windows-10-wsl-debian-9-stretch-升级到-debian-10-buster)
 
 [参考1：安装wsl](https://liujia.anqun.org/index.php/archives/1537/)
 
@@ -67,3 +68,21 @@ sudo service ssh restart
 cat /etc/os-release
 sudo nano /etc/apt/sources.list
 ```
+
+# Windows 10 WSL Debian 9 Stretch 升级到 Debian 10 Buster
+
+### 1，将你的 Debian 9 升级到最新状态
+    sudo apt update && apt upgrade -y
+    sudo apt dist-upgrade
+    //删除未使用的依赖项：
+    apt --purge autoremove
+### 2，更新源 
+    sudo nano /etc/apt/sources.list
+### 3，再升级
+    sudo apt update && apt upgrade -y
+    sudo apt dist-upgrade
+### 4，然后升级成功之后删除缓存
+    sudo apt autoremove -y
+### 5，最后查看系统版本
+    sudo cat /etc/issue
+会显示出如下 Debian GNU/Linux 10 (buster)

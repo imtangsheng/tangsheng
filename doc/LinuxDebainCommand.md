@@ -1,4 +1,10 @@
-# Linux Debian 常用命令
+# Linux Debain Command
+
+## 目录
+- [Linux Debian 常用命令](#linux-debian-常用命令)
+
+
+## Linux Debian 常用命令
 ```
 // 查看ip地址
 ip a
@@ -25,9 +31,8 @@ sudo service ssh restart
 
 // ssh密钥配置生成
 ssh-keygen -f tang -C "tang ssh key"
+
 // 系统软件更新,一般安装新软件版本检查
-
-
 sudo apt update && sudo apt upgrade -y
 
 // 映射硬盘共享的文件Windows环境
@@ -44,3 +49,22 @@ sudo apt-get install clang
 sudo apt remove clang
 
 ```
+
+## wsl-debian 升级
+
+    sudo apt update && apt upgrade -y
+    sudo apt dist-upgrade
+    //删除未使用的依赖项：
+    apt --purge autoremove
+    sudo nano /etc/apt/sources.list
+
+    // https://mirror.tuna.tsinghua.edu.cn/help/debian/
+    // ^U 粘贴文本 ^X保存退出
+
+    //再升级
+    sudo apt update && apt upgrade -y
+    sudo apt dist-upgrade
+    //然后升级成功之后删除缓存
+    sudo apt autoremove -y
+    //最后查看系统版本
+    sudo cat /etc/issue
