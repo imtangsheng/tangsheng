@@ -1,0 +1,15 @@
+// 将键绑定放在此文件中以覆盖默认值
+[
+   {
+    "key": "ctrl+;",
+    "command":"type",
+    "args": {"text": "();\n"},
+    "when": "editorTextFocus && editorLangId == 'c' || editorTextFocus && editorLangId == 'cpp' || editorTextFocus && editorLangId == 'cuda-cpp'"
+    } ,
+    {
+        "key": "alt+;",
+        "command":"type",
+        "args": {"text": ");\n"},
+        "when": "editorTextFocus && editorLangId == 'c' || editorTextFocus && editorLangId == 'cpp' || editorTextFocus && editorLangId == 'cuda-cpp'"
+    } 
+]

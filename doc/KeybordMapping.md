@@ -9,7 +9,7 @@
 ## 3.添加映射
 打开Scancode Map文件，如图：
 
-![Scancode Map文件示意](https://github.com/imtangsheng/tangsheng/raw/main/img/KeyboardMapping.png "Scancode Map")
+![Scancode Map文件示意](https://github.com/imtangsheng/tangsheng/raw/main/Resource/KeyboardMapping.png "Scancode Map")
 
 先解释一下每一排的含义
 
