@@ -43,6 +43,10 @@ sudo nano /etc/apt/sources.list
 // 查询软件版本,是否存在
 sudo apt-cache madison 'clang'
 sudo apt-cache policy 'clang'
+
+// 查询软件源的软件所有信息
+apt search clang
+
 // 安装
 sudo apt-get install clang
 // 卸载
