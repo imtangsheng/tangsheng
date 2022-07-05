@@ -7,12 +7,15 @@
 - Linux Debain
   - [Linux 系统目录命名风格](./doc/LinuxSystemDirectoryNamingStyle.md)
   - [Linux Debian 常用命令](./doc/LinuxDebainCommand.md)
-- ProgrammingTools编程效率工具
+- Programming Tools 编程效率工具
   - [markdown使用说明](./doc/MarkdownUsageInstructions.md "") | [菜鸟教程链接](https://www.runoob.com/markdown/md-image.html "")
   - [git使用说明](./doc/GitUsageInstructions.md.md "")
   - [Make 命令教程](./doc/MakeCommandTutorial.md)
   - [Shell(Bash)脚本教程](./doc/BashLinuxShell.md) | [菜鸟 Shell 脚本教程链接](https://www.runoob.com/linux/linux-shell.html)
   - [VSCode编程配置](./doc/VSCodeConfig.md)
+- Programming Tutorials
+  - [C Programming Tutorial](./Documentation/CProgrammingTutorial.md)
+  - [Python3 Tutorial](./Documentation/Python3Tutorial.md)
 - Issues(#Issues)
   - [Images not displaying in GitHub Pages](#github上添加图片方式)
 

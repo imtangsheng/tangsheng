@@ -3,6 +3,8 @@
 参考
 [菜鸟教程](https://www.runoob.com/cprogramming/c-basic-syntax.html)
 
+[C 参考手册](https://zh.cppreference.com/w/c)
+
 ## 目录
 - [C 基本语法](#c-基本语法)
 
