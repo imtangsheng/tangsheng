@@ -16,6 +16,7 @@
 - Programming Tutorials
   - [C Programming Tutorial](./Documentation/CProgrammingTutorial.md)
   - [Python3 Tutorial](./Documentation/Python3Tutorial.md)
+  - [Rust Language Tutorial](./Documentation/RustProgrammingTutorial.md)
 - Issues(#Issues)
   - [Images not displaying in GitHub Pages](#github上添加图片方式)
 
