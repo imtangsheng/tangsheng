@@ -20,7 +20,7 @@
 - Windows10
   - [KeybordMapping键盘映射方法](./doc/KeybordMapping.md "Keybord")
   - [Windows10常用命令](./doc/WindowsCommand.md "")
-  - [Windows10安装Linux发行版Debian子系统wsl](./doc/WSL_Debian.md)
+  - [Windows10安装Linux发行版Debian子系统wsl](./Documentation/InstallDebianOnWSL.md)
 
 - Issues(#Issues)
   - [Images not displaying in GitHub Pages](#github上添加图片方式)
