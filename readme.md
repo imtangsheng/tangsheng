@@ -7,7 +7,7 @@
   - [Rust Language Tutorial](./Documentation/RustProgrammingTutorial.md)
 
 - Programming Tools 编程效率工具
-  - [markdown使用说明](./doc/MarkdownUsageInstructions.md "") | [菜鸟教程链接](https://www.runoob.com/markdown/md-image.html "")
+  - [markdown使用说明](./doc/MarkdownUsageInstructions.md) | [菜鸟教程链接](https://www.runoob.com/markdown/md-image.html "")
   - [git使用说明](./doc/GitUsageInstructions.md.md "")
   - [Make 命令教程](./doc/MakeCommandTutorial.md)
   - [Shell(Bash)脚本教程](./doc/BashLinuxShell.md) | [菜鸟 Shell 脚本教程链接](https://www.runoob.com/linux/linux-shell.html)
@@ -18,8 +18,8 @@
   - [Linux Debian 常用命令](./doc/LinuxDebainCommand.md)
 
 - Windows10
-  - [KeybordMapping键盘映射方法](./doc/KeybordMapping.md "Keybord")
-  - [Windows10常用命令](./doc/WindowsCommand.md "")
+  - [KeybordMapping键盘映射方法](./doc/KeybordMapping.md)
+  - [Windows10常用命令](./doc/WindowsCommand.md)
   - [Windows10安装Linux发行版Debian子系统wsl](./Documentation/InstallDebianOnWSL.md)
 
 - Issues(#Issues)
