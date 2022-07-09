@@ -6,6 +6,10 @@
   - [Python3 Tutorial](./Documentation/Python3Tutorial.md)
   - [Rust Language Tutorial](./Documentation/RustProgrammingTutorial.md)
 
+- Programming Language Style Guide(Google 开源项目风格指南)
+  - [Python 风格指南](https://zh-google-styleguide.readthedocs.io/en/latest/google-python-styleguide/contents/)
+  - C 语言学习笔记与命名规范(在微信收藏上查看)
+
 - Programming Tools 编程效率工具
   - [markdown使用说明](./doc/MarkdownUsageInstructions.md) | [菜鸟教程链接](https://www.runoob.com/markdown/md-image.html "")
   - [git使用说明](./doc/GitUsageInstructions.md.md "")
