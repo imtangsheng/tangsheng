@@ -18,9 +18,10 @@
   - [Shell(Bash)脚本教程](./doc/BashLinuxShell.md) | [菜鸟 Shell 脚本教程链接](https://www.runoob.com/linux/linux-shell.html)
   - [VSCode编程配置](./doc/VSCodeConfig.md)
 
-- Operating System 操作系统
+- Operating System and Compiler 操作系统与编译器学习
   - [TencentOS Tiny：腾讯开源IoTOS物联网实时操作系统](https://github.com/OpenAtomFoundation/TencentOS-tiny)
   - [30天自制操作系统](https://github.com/yourtion/30dayMakeOS)
+  - [使用 LLVM 实现一个简单编译器](https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/index.html)
 
 - Linux Debain
   - [Linux 系统目录命名风格](./doc/LinuxSystemDirectoryNamingStyle.md)
