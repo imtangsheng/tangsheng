@@ -1,13 +1,13 @@
 
 ## 目录
 
-- Programming Tutorials
-  - [C Programming Tutorial](./Documentation/CProgrammingTutorial.md)
-  - [Python3 Tutorial](./Documentation/Python3Tutorial.md)
-  - [Rust Language Tutorial](./Documentation/RustProgrammingTutorial.md)
+- **Programming Tutorials**
+  - [**C Programming Tutorial**](./Documentation/CProgrammingTutorial.md)
+  - [**Python3 Tutorial**](./Documentation/Python3Tutorial.md)
+  - [**Rust Language Tutorial**](./Documentation/RustProgrammingTutorial.md)
 
-- Programming Language Style Guide(Google 开源项目风格指南)
-  - [Python 风格指南](https://zh-google-styleguide.readthedocs.io/en/latest/google-python-styleguide/contents/)
+- **Programming Language Style Guide(Google 开源项目风格指南)**
+  - [**Python 风格指南**](https://zh-google-styleguide.readthedocs.io/en/latest/google-python-styleguide/contents/)
   - [编写高质量代码改善 Python 程序的 91 个建议](https://l1nwatch.gitbook.io/writing_solid_python_code_gitbook/)
   - C 语言学习笔记与命名规范(在微信收藏上查看)
 
