@@ -19,7 +19,8 @@
   - [VSCode编程配置](./doc/VSCodeConfig.md)
 
 - Operating System 操作系统
- - [TencentOS Tiny：腾讯开源IoTOS物联网实时操作系统](https://github.com/OpenAtomFoundation/TencentOS-tiny)
+  - [TencentOS Tiny：腾讯开源IoTOS物联网实时操作系统](https://github.com/OpenAtomFoundation/TencentOS-tiny)
+  - [30天自制操作系统](https://github.com/yourtion/30dayMakeOS)
 
 - Linux Debain
   - [Linux 系统目录命名风格](./doc/LinuxSystemDirectoryNamingStyle.md)
