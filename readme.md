@@ -32,10 +32,10 @@
   - [Windows10常用命令](./doc/WindowsCommand.md)
   - [Windows10安装Linux发行版Debian子系统wsl](./Documentation/InstallDebianOnWSL.md)
 
-- Issues(#Issues)
+- 本文档问题补充说明目录(#本文档问题补充说明)
   - [Images not displaying in GitHub Pages](#github上添加图片方式)
 
-## Issues
+## 本文档问题补充说明
 ### Github上添加图片方式
   1)本地不显示，远程显示:  在Github上选择已经上传的图片，复制此时的浏览器地址栏地址url
 
