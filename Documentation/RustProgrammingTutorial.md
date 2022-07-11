@@ -6,6 +6,13 @@
 
 [Rust语言圣经(Rust Course)](https://course.rs/about-book.html)
 
+[嵌入式Rust之书](https://github.com/Logiase/The-Embedded-Rust-Book-CN)
+
+[Microsoft: 使用 Rust 迈出第一步](https://docs.microsoft.com/zh-cn/learn/paths/rust-first-steps/)
+
+[Writing an OS in Rust 用Rust编程语言编写了一个小操作系统](https://os.phil-opp.com/zh-CN/)
+
+
 ## 目录
 - [Rust关键字](#rust关键字)
 - [运算符与符号](#运算符与符号)
