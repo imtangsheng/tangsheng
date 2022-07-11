@@ -12,6 +12,8 @@
 
 [Writing an OS in Rust 用Rust编程语言编写了一个小操作系统](https://os.phil-opp.com/zh-CN/)
 
+[Rust By Practice( Rust 练习实践 )](https://zh.practice.rs/why-exercise.html)
+
 
 ## 目录
 - [Rust关键字](#rust关键字)

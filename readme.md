@@ -12,8 +12,8 @@
   - C 语言学习笔记与命名规范(在微信收藏上查看)
 
 - Programming Tools 编程效率工具
-  - [Markdown使用说明](./doc/MarkdownUsageInstructions.md) | 菜鸟教程链接(https://www.runoob.com/markdown/md-image.html "")
-  - [Git使用说明](./doc/GitUsageInstructions.md.md "")
+  - [Markdown使用说明](./doc/MarkdownUsageInstructions.md) | 菜鸟教程链接(https://www.runoob.com/markdown/md-image.html)
+  - [Git使用说明](./doc/GitUsageInstructions.md.md)
   - [Make 命令教程](./doc/MakeCommandTutorial.md)
   - [Shell(Bash)脚本教程](./doc/BashLinuxShell.md) | 菜鸟 Shell 脚本教程链接(https://www.runoob.com/linux/linux-shell.html)
   - [VSCode编程配置](./doc/VSCodeConfig.md)
