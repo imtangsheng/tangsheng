@@ -16,13 +16,33 @@ https://www.tutorialspoint.com/python/index.htm
 
 ## 目录
 - [Python3 基础语法](#python3-基础语法)
+ - [python保留字](#1python保留字)
+
+- [Python3 新特性](#python3-新特性)
+- [类型注解](#1类型注解)
 
 ## Python3 基础语法
 
-### python保留字
+### 1.python保留字
 保留字即关键字，我们不能把它们用作任何标识符名称。Python 的标准库提供了一个 keyword 模块，可以输出当前版本的所有关键字：
 ```
 >>> import keyword
 >>> keyword.kwlist
 ['False', 'None', 'True', 'and', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
 ```
+
+## Python3 新特性
+
+### 1.类型注解
+
+用 : 类型 的形式指定函数的参数类型，用 -> 类型 的形式指定函数的返回值类型
+
+```
+def add(x:int, y:int) -> int:
+    return x + y
+
+//在函数的 __annotations__ 属性中会有你设定的注解：
+print(add.__annotations__)
+// {'x': <class 'int'>, 'y':<class 'int'>, 'return':<class 'int'>}
+```
+
