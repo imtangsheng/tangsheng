@@ -3,16 +3,25 @@
 参考
 [菜鸟教程](https://www.runoob.com/python3/python3-tutorial.html)
 
-白月黑羽教Python 教程
+白月黑羽教Python 教程 :
 
 http://www.python3.vip/
 
 https://www.byhy.net/
 
 
-Python Tutorial
+Python Tutorial :
 
 https://www.tutorialspoint.com/python/index.htm
+
+
+
+https://github.com/Asabeneh/30-Days-Of-Python
+
+
+The Big Book of Small Python Projects：
+https://inventwithpython.com/bigbookpython/
+
 
 ## 目录
 - [Python3 基础语法](#python3-基础语法)
