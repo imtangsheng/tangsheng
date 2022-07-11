@@ -22,6 +22,7 @@
   - [TencentOS Tiny：腾讯开源IoTOS物联网实时操作系统](https://github.com/OpenAtomFoundation/TencentOS-tiny)
   - [30天自制操作系统](https://github.com/yourtion/30dayMakeOS)
   - [使用 LLVM 实现一个简单编译器](https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/index.html)
+  - [从零开始制作一个操作系统](https://github.com/lneylan/os-guide-cn)
 
 - Linux Debain
   - [Linux 系统目录命名风格](./doc/LinuxSystemDirectoryNamingStyle.md)
