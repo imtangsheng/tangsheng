@@ -7,22 +7,27 @@
   - [**Rust Language Tutorial**](./Documentation/RustProgrammingTutorial.md)
 
 - **Programming Language Style Guide(Google 开源项目风格指南)**
-  - [**Python 风格指南**](https://zh-google-styleguide.readthedocs.io/en/latest/google-python-styleguide/contents/)
-  - [编写高质量代码改善 Python 程序的 91 个建议](https://l1nwatch.gitbook.io/writing_solid_python_code_gitbook/)
+  - **https:Python 风格指南**(https://zh-google-styleguide.readthedocs.io/en/latest/google-python-styleguide/contents/)
+  - https:编写高质量代码改善 Python 程序的 91 个建议(https://l1nwatch.gitbook.io/writing_solid_python_code_gitbook/)
   - C 语言学习笔记与命名规范(在微信收藏上查看)
 
 - Programming Tools 编程效率工具
-  - [Markdown使用说明](./doc/MarkdownUsageInstructions.md) | [菜鸟教程链接](https://www.runoob.com/markdown/md-image.html "")
+  - [Markdown使用说明](./doc/MarkdownUsageInstructions.md) | 菜鸟教程链接(https://www.runoob.com/markdown/md-image.html "")
   - [Git使用说明](./doc/GitUsageInstructions.md.md "")
   - [Make 命令教程](./doc/MakeCommandTutorial.md)
-  - [Shell(Bash)脚本教程](./doc/BashLinuxShell.md) | [菜鸟 Shell 脚本教程链接](https://www.runoob.com/linux/linux-shell.html)
+  - [Shell(Bash)脚本教程](./doc/BashLinuxShell.md) | 菜鸟 Shell 脚本教程链接(https://www.runoob.com/linux/linux-shell.html)
   - [VSCode编程配置](./doc/VSCodeConfig.md)
 
 - Operating System and Compiler 操作系统与编译器学习
-  - [TencentOS Tiny：腾讯开源IoTOS物联网实时操作系统](https://github.com/OpenAtomFoundation/TencentOS-tiny)
-  - [30天自制操作系统](https://github.com/yourtion/30dayMakeOS)
-  - [使用 LLVM 实现一个简单编译器](https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/index.html)
-  - [从零开始制作一个操作系统](https://github.com/lneylan/os-guide-cn)
+  - TencentOS Tiny：腾讯开源IoTOS物联网实时操作系统(https://github.com/OpenAtomFoundation/TencentOS-tiny)
+  - 30天自制操作系统(https://github.com/yourtion/30dayMakeOS)
+  - 从零开始制作一个操作系统(https://github.com/lneylan/os-guide-cn)
+  - Writing an OS in Rust(https://os.phil-opp.com/zh-CN/)
+  - 使用 LLVM 实现一个简单编译器(https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/index.html)
+  - A Compiler Writing Journey(https://github.com/DoctorWkt/acwj)
+
+- SQL 数据库
+  - Writing a sqlite clone from scratch in C(https://github.com/cstack/db_tutorial)
 
 - Linux Debain
   - [Linux 系统目录命名风格](./doc/LinuxSystemDirectoryNamingStyle.md)
