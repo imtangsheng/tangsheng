@@ -34,6 +34,8 @@ https://inventwithpython.com/bigbookpython/
 - [python项目规范](#python项目规范)
     - [项目目录结构示例](#1项目目录结构示例)
 
+- [python装饰器](#python装饰器)
+    - [python装饰器示例](#1python装饰器示例)
 
 ## Python3 基础语法
 
@@ -85,4 +87,34 @@ print(add.__annotations__)
 ├── requrements.txt                 项目依赖文件
 ├── TODO.md                         待完成项目
 └── .gitignore                      版本库ignore文件
+```
+
+## python装饰器
+
+通常被装饰后的函数， 会在原有的函数基础上，增加一点功能。
+把函数作为参数使用的函数方法。
+
+### python装饰器示例
+
+```
+import time
+
+def sayLocal(func):
+    def wrapper(*args,**kargs):
+        curTime = func(*args,**kargs)
+        return f'当地时间： {curTime}'
+    return wrapper
+
+@sayLocal
+def getXXXTimeFormat1(name):
+    curTime = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime())
+    return f'{curTime} ，数据采集者：{name} '
+
+@sayLocal
+def getXXXTimeFormat2(name,place):
+    curTime = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime())
+    return f'{curTime} ，数据采集者：{name} , 采集地：{place}'
+
+print (getXXXTimeFormat1('张三'))    
+print (getXXXTimeFormat2('张三',place='北京'))    
 ```
