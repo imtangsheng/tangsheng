@@ -36,7 +36,8 @@
 - Windows10
   - [KeybordMapping键盘映射方法](./doc/KeybordMapping.md)
   - [Windows10常用命令](./doc/WindowsCommand.md)
-  - [Windows10安装Linux发行版Debian子系统wsl](./Documentation/InstallDebianOnWSL.md)
+  - [Windows10安装Linux发行版Debian子系统wsl](./Documentation/WindowsSubsystemforLinux.md)
+  - [Run Linux GUI apps on the Windows Subsystem for Linux](./Documentation/WindowsSubsystemforLinux.md)
 
 - 本文档问题补充说明目录(#本文档问题补充说明)
   - [Images not displaying in GitHub Pages](#github上添加图片方式)
