@@ -12,8 +12,9 @@ https://docs.microsoft.com/zh-cn/windows/wsl/install
 - [Run Linux GUI apps on the Windows Subsystem for Linux](#run-linux-gui-apps-on-the-windows-subsystem-for-linux)
   - [1.1 Install support for Linux GUI apps](#11-install-support-for-linux-gui-apps)
   - [2.1 Install X11 apps](#21-install-x11-apps)
-    - [2.2 win11wsl安装vcxsrv-windows-x-server](#22-win11wsl安装vcxsrv-windows-x-server)
-    - [2.3 python3中安装tkinter使用gui](#23-python3中安装tkinter使用gui)
+  - [2.2 win11wsl安装vcxsrv-windows-x-server](#22-win11wsl安装vcxsrv-windows-x-server)
+  - [2.3 python3中安装tkinter使用gui](#23-python3中安装tkinter使用gui)
+  - [3.1在python3中使用flet(based on Flutter by Google)](#31在python3中使用flet)
 
 # Windows10安装Linux发行版Debian子系统wsl
 
@@ -43,11 +44,8 @@ Rename-Item Debian.appx Debian.zip
 
 Expand-Archive Debian.zip Debian
 
-
 Add-AppxPackage .\Debian.appx ()
-
 ```
-
 ### 3.将 WSL 2 设置为默认版本
 
     wsl --set-default-version 2
@@ -142,7 +140,7 @@ https://zhuanlan.zhihu.com/p/128507562
 //启动
 //配置
 //设置 Display number 0
-// 勾选 Disable access control
+//勾选 Disable access control
 ```
 
 **'Couldn't connect to display ":0.0"**
@@ -172,3 +170,42 @@ python3
 //退出
 >>>exit()
 ```
+
+### 3.1在python3中使用flet
+
+https://flet.dev/docs/
+
+You build a UI for your program with Flet controls which are based on Flutter by Google. 
+
+Installing flet module
+Flet requires Python 3.7 or above. To start with Flet, you need to install flet module first:
+```
+pip install flet
+```
+
+NOTE
+To upgrade flet module run:
+```
+pip install flet --upgrade
+```
+Basic app structure
+A very minimal Flet app has the following structure:
+```
+import flet
+from flet import Page
+
+def main(page: Page):
+    # add/update controls on Page
+    pass
+
+flet.app(target=main)
+
+//127.0.0.1:XXXXX
+
+```
+
+**issue:**
+no moudle name ensurepip 
+
+linux:apt-get install python3-venv
+windows:使用exe安装

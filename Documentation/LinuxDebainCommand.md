@@ -52,6 +52,17 @@ sudo apt-get install clang
 // 卸载
 sudo apt remove clang
 
+1、卸载python3
+sudo apt-get remove python3
+
+2、卸载python3及其依赖
+sudo apt-get remove --auto-remove python3
+
+3、清除python3
+sudo apt-get purge python3
+or
+sudo apt-get purge --auto-remove python3
+
 ```
 
 ## wsl-debian 升级
