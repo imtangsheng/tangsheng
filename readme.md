@@ -39,6 +39,9 @@
 - SQL 数据库
   - Writing a sqlite clone from scratch in C(https://github.com/cstack/db_tutorial)
 
+- [Others news](./Documentation/OthersNews.md)
+  - [Artificial intelligence 人工智能](./Documentation/OthersNews.md/#artificial-intelligence-人工智能)
+
 - 本文档问题补充说明目录(#本文档问题补充说明)
   - [Images not displaying in GitHub Pages](#github上添加图片方式)
 
